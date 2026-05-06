@@ -1,0 +1,17 @@
+{
+  "repo": "amber-model-metric-grid",
+  "thresholds": {
+    "signal": 3,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 3,
+    "ship": 167,
+    "watch": 127
+  },
+  "terms": [
+    "feature drift",
+    "window width",
+    "metric stability",
+    "explainability"
+  ]
+}
