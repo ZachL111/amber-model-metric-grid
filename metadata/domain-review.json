@@ -1,0 +1,73 @@
+{
+  "repo": "amber-model-metric-grid",
+  "language": "Haskell",
+  "category": "ML utilities",
+  "goal": "Create a Haskell reference implementation for metric workflows, centered on visual model generation, layout fixtures, and stable geometry snapshots.",
+  "review_model": {
+    "terms": [
+      "feature drift",
+      "window width",
+      "metric stability",
+      "explainability"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "feature drift",
+      "signal": 67,
+      "slack": 35,
+      "drag": 12,
+      "confidence": 66,
+      "score": 199,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "window width",
+      "signal": 77,
+      "slack": 20,
+      "drag": 26,
+      "confidence": 75,
+      "score": 171,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "metric stability",
+      "signal": 70,
+      "slack": 28,
+      "drag": 15,
+      "confidence": 52,
+      "score": 175,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "explainability",
+      "signal": 87,
+      "slack": 53,
+      "drag": 11,
+      "confidence": 71,
+      "score": 265,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "feature drift",
+      "signal": 87,
+      "slack": 33,
+      "drag": 12,
+      "confidence": 51,
+      "score": 222,
+      "lane": "ship"
+    }
+  ]
+}
